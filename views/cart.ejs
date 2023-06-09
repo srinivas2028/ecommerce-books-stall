@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cart</title>
+</head>
+<body>
+    cart
+    <% for(let i=0;i<cartdatabook.length;i++) { %>
+       <h1><%= cartdatabook[i].details.title %></h1> 
+       <a  class="quantity-selector__button" aria-label="Decrease quantity" data-no-instant=""><svg focusable="false" width="8" height="2" class="icon icon--minus" viewBox="0 0 8 2">
+        <path fill="currentColor" d="M0 0h8v2H0z"></path>
+      </svg></a>
+      <p> <%= cartdatabook[i].count %></p>
+     <a  class="quantity-selector__button " aria-label="Increase quantity" data-no-instant=""><svg focusable="false" width="8" height="8" class="icon icon--plus" viewBox="0 0 8 8">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M3 5v3h2V5h3V3H5V0H3v3H0v2h3z" fill="currentColor"></path>
+      </svg></a>
+      <% } %>
+    
+
+</body>
+</html>

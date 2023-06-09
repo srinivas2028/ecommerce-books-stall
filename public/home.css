@@ -1,0 +1,72 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#E5F2FF;
+    padding: 10px;
+}
+
+/* Style for the logo */
+.navbar-logo {
+    
+    width: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    flex-grow: 1;
+}
+
+/* Style for the search bar */
+.navbar-search {
+    flex-grow: 1;
+    margin-right: 10px;
+    
+}
+#finder{
+    border: black 1px solid;
+}
+
+/* Style for the right section */
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+/* Style for the login and add-to-cart buttons */
+.navbar-button {
+    margin-right: 10px;
+    padding: 8px 16px;
+    
+    border: none;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+:hover.navbar-button {
+    background-color: #ADD8E6;
+}
+.recomdation{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    
+}
+.previewimg{
+    
+    display: flex;
+    padding: 30px;
+    
+}
+
+.previewimg :hover {
+   
+    box-shadow: 0 0 20px rgba(20, 20, 20, 0.404); 
+}
+
+.sidebar{
+    display: none;
+    position: relative;
+}

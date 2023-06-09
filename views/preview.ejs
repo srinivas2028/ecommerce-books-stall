@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <title>Book Preview</title>
+    <link rel="stylesheet" href="/preview.css">
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="navbar-search">
+          <input type="text" id="finder" placeholder="Search...">
+      </div>
+      <div class="navbar-logo">
+          <img src="/book-svgrepo-com.svg" style="height: 50px;" alt="Logo">
+      </div>
+      <div class="navbar-right">
+          <a href="#" class="navbar-button">Login</a>
+          <a href="#" class="navbar-button">Cart</a>
+      </div>
+  </div>
+    <h1>Book Preview</h1>
+    <div class="previewer">
+      <div class="buyaddtocart"><img src="<%= bookinfo.img %>" class="img"  alt="">
+     <a href="/cart/<%= bookinfo.id%>"><button  >add to cart</button></a> 
+      <button >buy now</button>
+      </div> 
+    <div class="info">
+        <h1><%= bookinfo.author %></h1>
+  <h1><%= bookinfo.title %></h1>
+  <p><%= bookinfo.details %></p>
+    </div></div>
+   
+
+  </body>
+</html>
+
+
+
+ 
+
